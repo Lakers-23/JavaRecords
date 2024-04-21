@@ -1,4 +1,4 @@
-package Objectoriented;
+package base;
 
 //Java使用extends关键字来实现继承
 public class inherit {

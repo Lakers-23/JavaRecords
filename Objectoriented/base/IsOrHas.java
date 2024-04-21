@@ -1,11 +1,11 @@
-package Objectoriented;
-//¼Ì³ÐÊÇis¹ØÏµ£¬×éºÏÊÇhas¹ØÏµ¡£
+package base;
+//ï¿½Ì³ï¿½ï¿½ï¿½isï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½hasï¿½ï¿½Ïµï¿½ï¿½
 public class IsOrHas {
     public static void main(String[] args) {
-        Person p = new Person("Ð¡Ã÷", 12);
-        Student s = new Student("Ð¡ºì", 20, 99);
-        // TODO: ¶¨ÒåPrimaryStudent£¬´ÓStudent¼Ì³Ð£¬ÐÂÔögrade×Ö¶Î:
-        Student ps = new PrimaryStudent("Ð¡¾ü", 9, 100, 5);
+        Person p = new Person("Ð¡ï¿½ï¿½", 12);
+        Student s = new Student("Ð¡ï¿½ï¿½", 20, 99);
+        // TODO: ï¿½ï¿½ï¿½ï¿½PrimaryStudentï¿½ï¿½ï¿½ï¿½Studentï¿½Ì³Ð£ï¿½ï¿½ï¿½ï¿½ï¿½gradeï¿½Ö¶ï¿½:
+        Student ps = new PrimaryStudent("Ð¡ï¿½ï¿½", 9, 100, 5);
         System.out.println(ps.getScore());
     }
 }
