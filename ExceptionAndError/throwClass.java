@@ -7,7 +7,12 @@ public class throwClass {
         try {
             process1();
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("catched");
+            throw new RuntimeException(e);
+           // e.printStackTrace();
+        } finally {     //JVM会先执行finally，然后抛出异常 只能抛出一个异常 catch中准备抛出的异常就“消失”了
+            System.out.println("finally");
+            throw new IllegalArgumentException();
         }
     }
 
@@ -16,6 +21,7 @@ public class throwClass {
             process2();
         } catch (NullPointerException e) {
             throw new IllegalArgumentException(e);
+            
         }
     }
 

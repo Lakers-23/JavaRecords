@@ -63,3 +63,25 @@ public class errorClass {
       return  s.getBytes();
   }
 }
+
+//可以写多个catch语句，每个catch分别捕捉对应的Exception及子类，但是子类必须写在前面 多个catch语句只有一个能被执行。
+//finally语句 Java的try ... catch机制还提供了finally语句，finally语句块保证有无错误都会执行
+
+/**
+ * try {
+      process1();
+      process2();
+      process3();
+   } catch (UnsupportedEncodingException e) {
+      System.out.println("Bad encoding");
+   } catch (IOException e) {
+      System.out.println("IO error");
+   }  catch (IOException | NumberFormatException e) {
+      同时处理多种exception
+   }
+   } finally {
+      1、finally语句不是必须的，可写可不写；
+      2、finally总是最后执行。
+      System.out.println("END");
+   }
+ */

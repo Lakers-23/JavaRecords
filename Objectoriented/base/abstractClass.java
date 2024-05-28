@@ -22,11 +22,19 @@ abstract class Person {
 }
 
 class Student extends Person {
+    //Person类定义了抽象方法run()，那么，在实现子类Student的时候，就必须覆写run()方法, 否则编译报错
+    //The type Student must implement the inherited abstract method Person.run()
     @Override
     public void run() {
         System.out.println("Student.run");
     }
 }
+/*
+ * 无法实例化的抽象类有什么用？
+ * 因为抽象类本身被设计成只能用于被继承，因此，抽象类可以强迫子类实现其定义的抽象方法，否则编译会报错。
+ * 因此，抽象方法实际上相当于定义了“规范”。
+ * 
+*/
 
 
 
